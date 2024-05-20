@@ -14,11 +14,16 @@ public class Main {
                 3,"日野",4,"柴井",5,"高瀬",
                 6,"大久保",7,"村中",8,"権藤",
                 9,"森本",10,"池之上");
+        Map<Integer,String> oddNumberMap = new HashMap<>();
         for(int key : studentMap.keySet()){
-            if(key % 2 == 0) {
+            if(key % 2 == 1) {
+                //Keyが奇数の値を取得し、標準出力。
                 System.out.println(studentMap.get(key));
+                //偶数を削除ではなく、奇数のみを出力。
+                oddNumberMap.put(key,studentMap.get(key));
             }
         }
+        System.out.println(oddNumberMap);
 
         // 以下前半の課題
         // 生徒名みたいな文字列のリストを作って下さい。

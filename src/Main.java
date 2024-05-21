@@ -16,6 +16,7 @@ public class Main {
                 9, "森本", 10, "池之上");
         Map<Integer, String> studentMap2 = new HashMap<>(studentMap);
 
+        //for文箇所でコードのフォーマットを実施。設定も変更。
         for (int i = 0; i <= studentMap.size(); i++) {
             //削除前のkeyがiの時の値を表示
             System.out.println(i + "回目");

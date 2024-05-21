@@ -15,7 +15,6 @@ public class Main {
                 6,"大久保",7,"村中",8,"権藤",
                 9,"森本",10,"池之上");
         Map<Integer,String> studentMap2 = new HashMap<>(studentMap);
-        System.out.println(studentMap2.size());
 
         for(int i = 0; i <= studentMap.size(); i ++){
             //削除前のkeyがiの時の値を表示

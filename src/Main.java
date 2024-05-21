@@ -10,13 +10,24 @@ public class Main {
         // Mapの中の番号が偶数のものをMapから削除する。
         // 上記の処理を行う繰り返し処理を実装してください。
         // 削除した状態のものを出力して表示してください
-        Map<Integer,String> studentMap = Map.of(1,"古田",2,"山田",
-                3,"日野",4,"柴井",5,"高瀬",
-                6,"大久保",7,"村中",8,"権藤",
-                9,"森本",10,"池之上");
-        for(int key : studentMap.keySet()){
-            if(key % 2 == 0) {
-                System.out.println(studentMap.get(key));
+        Map<Integer, String> studentMap = Map.of(1, "古田", 2, "山田",
+                3, "日野", 4, "柴井", 5, "高瀬",
+                6, "大久保", 7, "村中", 8, "権藤",
+                9, "森本", 10, "池之上");
+        Map<Integer, String> studentMap2 = new HashMap<>(studentMap);
+
+        //for文箇所でコードのフォーマットを実施。設定も変更。
+        for (int i = 0; i <= studentMap.size(); i++) {
+            //削除前のkeyがiの時の値を表示
+            System.out.println(i + "回目");
+            if (i % 2 == 0) {
+                System.out.println("iが" + i + "は偶数のため削除");
+                studentMap2.remove(i);
+                System.out.println("削除後のリストは" + studentMap2);
+                System.out.println();
+            } else {
+                System.out.println("iが" + i + "で奇数なので削除はなし。");
+                System.out.println();
             }
         }
 

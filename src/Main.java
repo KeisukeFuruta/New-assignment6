@@ -24,10 +24,11 @@ public class Main {
                 System.out.println("iが"+i+"は偶数のため削除");
                 studentMap2.remove(i);
                 System.out.println("削除後のリストは"+studentMap2);
+                System.out.println();
+            }else {
+                System.out.println("iが" + i + "で奇数なので削除はなし。");
+                System.out.println();
             }
-            System.out.println("iが"+i+"で奇数なので削除はなし。");
-            System.out.println();
-            //iが7回までしか到達しない。なんで？
         }
 
         // 以下前半の課題
